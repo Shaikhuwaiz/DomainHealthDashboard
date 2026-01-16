@@ -146,7 +146,7 @@
       </div>
 
       <p class="text-xs text-gray-500">
-        Demo UI with mock data. Next: add polling + “refresh queue” UX.
+        Demo UI with mock data
       </p>
     </div>
   </div>
