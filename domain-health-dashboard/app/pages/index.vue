@@ -10,7 +10,7 @@
         <input
           v-model="q"
           placeholder="Search domain..."
-          class="w-full rounded-lg border bg-white px-3 py-2 text-sm outline-none focus:ring-2"
+          class="w-full rounded-lg border border-slate-700 bg-slate-900/60 px-3 py-2 text-sm text-white sm:w-48"
         />
 
         <div
@@ -56,9 +56,9 @@
       </p>
 
       <!-- Table -->
-      <div class="overflow-hidden rounded-xl border bg-white">
+      <div class="overflow-hidden rounded-xl border border-slate-800 bg-slate-900/50 backdrop-blur">
         <table class="w-full text-left text-sm">
-          <thead class="bg-gray-100">
+          <thead class="bg-slate-800/60 text-slate-200">
             <tr>
               <th class="px-4 py-3">Domain</th>
               <th class="px-4 py-3">Inboxes</th>
@@ -69,13 +69,12 @@
             </tr>
           </thead>
 
-          <!-- ✅ Normal rows -->
+          <!-- Normal rows -->
           <tbody v-if="!loading">
             <tr
               v-for="d in paginatedDomains"
               :key="d.domain"
-              class="border-t hover:bg-gray-50"
-            >
+              class="border-t border-slate-800 hover:bg-slate-800/40">
               <td class="px-4 py-3">
                 <NuxtLink
                   :to="`/domain/${encodeURIComponent(d.domain)}`"
@@ -100,7 +99,7 @@
 
             <!-- Empty state -->
             <tr v-if="filteredDomains.length === 0">
-              <td colspan="6" class="px-4 py-6 text-center text-gray-500">
+              <td colspan="6" class="px-4 py-6 text-center text-slate-400">
                 No domains found.
               </td>
             </tr>

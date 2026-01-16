@@ -58,8 +58,8 @@ const inboxes = ref([
 ])
 
 function badgeClass(health: Health) {
-  if (health === 'good') return 'bg-green-100 text-green-700'
-  if (health === 'warning') return 'bg-yellow-100 text-yellow-800'
-  return 'bg-red-100 text-red-700'
+  if (health === "good") return "bg-green-500/20 text-green-300 border border-green-500/30"
+  if (health === "warning") return "bg-yellow-500/20 text-yellow-300 border border-yellow-500/30"
+  return "bg-red-500/20 text-red-300 border border-red-500/30"
 }
 </script>
