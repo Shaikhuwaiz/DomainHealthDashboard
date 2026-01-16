@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-gray-50 p-6">
+ <div class="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 p-6 text-white">
     <div class="mx-auto max-w-6xl space-y-4">
       <h1 class="text-2xl font-bold">Domain Health Dashboard</h1>
 
